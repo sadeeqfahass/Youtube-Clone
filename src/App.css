@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.nav {
+    grid-column: 2 / -1;
+    background: #121212;
+    padding: .5rem 1rem;
+    position: sticky;
+    top: 0;
+}
+
+.nav .top {
+    padding: 0 1rem 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .top .logo img {
+    width: 100px;
+}
+
+.nav .top .search {
+    display: flex;
+    align-items: center;
+}
+
+.nav .top .search input {
+    width: 30rem;
+    height: 2.5rem;
+    background: transparent; 
+    border-radius: 20px 2px 2px 20px;
+    border: .7px solid grey;
+}
+
+.nav .top .search input:focus {
+    outline: none;
+    border: .7px solid rgb(28, 87, 225);
+}
+
+.nav .top .search .search-icon {
+    background: #363636;
+    padding: 8px 20px;
+    border: .7px solid grey;
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+    font-size: 1.5rem;
+}
+
+.nav .top .search .mic-icon {
+    background: #212121;
+    padding: 8px;
+    border-radius: 50%;
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+
+
+.nav .top .icon {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.nav .top .icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav .top .icons .user-profile img {
+    width: 35px;
+    border-radius: 50%;
+}
+
+.nav .bottom {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+}
+
+.nav .bottom::-webkit-scrollbar {
+    display: none;
+}
+
+.nav .bottom .filter {
+    background: #363636;
+    padding: .5rem;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.aside {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    background: #121212;
+    padding: 1rem 0;
+    box-sizing: border-box;
+}
+
+.aside .side-bar {
+    height: 500px;
+    position: sticky;
+    top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aside .side-bar .icon {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.aside .side-bar .menu-icon {
+    margin-bottom: 1.5rem;
+}
+
+.aside .side-bar .content {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.aside .side-bar .content:hover {
+    background: #4a4a4a;
+}
+
+.aside .side-bar .content p {
+    font-size: .7rem;
+}
+
+
+.main {
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+    background: rgb(40, 40, 40);
+}
