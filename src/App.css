@@ -1,11 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    box-sizing: border-box;
     height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 .container {
@@ -16,7 +23,7 @@ body {
 
 .nav {
     grid-column: 2 / -1;
-    background: #121212;
+    background: #0f0f0f;
     padding: .5rem 1rem;
     position: sticky;
     top: 0;
@@ -36,6 +43,7 @@ body {
 .nav .top .search {
     display: flex;
     align-items: center;
+    width: 50%;
 }
 
 .nav .top .search input {
@@ -100,12 +108,14 @@ body {
     padding: .5rem;
     border-radius: 10px;
     color: #fff;
+    font-size: .9rem;
+    white-space: nowrap;
 }
 
 .aside {
     grid-column: 1 / 2;
     grid-row: 1 / -1;
-    background: #121212;
+    background: #0f0f0f;
     padding: 1rem 0;
     box-sizing: border-box;
 }
@@ -126,6 +136,8 @@ body {
 
 .aside .side-bar .menu-icon {
     margin-bottom: 1.5rem;
+    padding: .3rem;
+    border-radius: 50%;
 }
 
 .aside .side-bar .content {
@@ -137,7 +149,8 @@ body {
     border-radius: 10px;
 }
 
-.aside .side-bar .content:hover {
+.aside .side-bar .content:hover,
+.aside .side-bar .menu-icon:hover {
     background: #4a4a4a;
 }
 

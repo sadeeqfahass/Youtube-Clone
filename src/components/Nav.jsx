@@ -9,18 +9,18 @@ function Nav() {
       <div className="nav">
         <div className="top">
           <div className="logo">
-            <img src="logo.png" alt="" />
+            <img src="logo.png" alt="" className='pointer'/>
           </div>
           <div className="search">
             <input type="text" name="" id="" />
-            <SearchIcon className='icon search-icon'/>
-            <KeyboardVoiceIcon className='icon mic-icon'/>
+            <SearchIcon className='icon search-icon pointer'/>
+            <KeyboardVoiceIcon className='icon mic-icon pointer'/>
           </div>
           <div className="icons">
-            <VideoCallOutlinedIcon className='icon'/>
-            <NotificationsNoneOutlinedIcon className='icon'/>
+            <VideoCallOutlinedIcon className='icon pointer'/>
+            <NotificationsNoneOutlinedIcon className='icon pointer'/>
             <div className="user-profile">
-                <img src="user.png" alt="" />
+                <img src="user.png" alt="" className='pointer'/>
             </div>
           </div>
         </div>
@@ -29,21 +29,21 @@ function Nav() {
             <Filter category = "Gaming"/>
             <Filter category = "Computer"/>
             <Filter category = "Aviation"/>
-            <Filter category = "SportsLeague"/>
-            <Filter category = "RecentlyUploaded"/>
+            <Filter category = "Sports League"/>
+            <Filter category = "Recently Uploaded"/>
             <Filter category = "Programming"/>
             <Filter category = "AI"/>
             <Filter category = "Live"/>
-            <Filter category = "ElectricVehicles"/>
+            <Filter category = "Electric Vehicles"/>
             <Filter category = "Gadgets"/>
             <Filter category = "Podcats"/>
             <Filter category = "Comedy"/>
-            <Filter category = "BodyBuilding"/>
-            <Filter category = "Fights"/>
-            <Filter category = "Fights"/>
-            <Filter category = "Fights"/>
-            <Filter category = "Fights"/>
-            <Filter category = "Fights"/>
+            <Filter category = "Body Building"/>
+            <Filter category = "Visual Arts"/>
+            <Filter category = "Mercedes Benz"/>
+            <Filter category = "Sales"/>
+            <Filter category = "Flights"/>
+            <Filter category = "Watched"/>
         </div>
       </div>
     </>

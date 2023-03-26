@@ -10,7 +10,7 @@ function Aside() {
     <>
       <div className="aside">
         <div className="side-bar">
-            <MenuOutlinedIcon className='menu-icon icon'/>
+            <MenuOutlinedIcon className='menu-icon icon pointer'/>
             <div className="content">
                 <HomeIcon className='icon'/>
                 <p>Home</p>
