@@ -1,10 +1,11 @@
 import React from 'react'
+import Videos from './Videos'
 
 function Main() {
   return (
     <>
       <div className="main">
-        <h2>cards here...</h2>
+        <Videos />
       </div>
     </>
   )

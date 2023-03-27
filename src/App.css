@@ -27,6 +27,7 @@ body {
     padding: .5rem 1rem;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .nav .top {
@@ -106,10 +107,15 @@ body {
 .nav .bottom .filter {
     background: #363636;
     padding: .5rem;
-    border-radius: 10px;
+    border-radius: 6px;
     color: #fff;
     font-size: .9rem;
     white-space: nowrap;
+}
+
+.nav .bottom .filter:active {
+    background: #fff;
+    color: #0f0f0f;
 }
 
 .aside {
@@ -158,9 +164,63 @@ body {
     font-size: .7rem;
 }
 
-
 .main {
     grid-column: 2 / -1;
     grid-row: 2 / -1;
-    background: rgb(40, 40, 40);
+    background: #0f0f0f
+}
+
+.videos-container {
+    padding: 0 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.video-card {
+    width: 31%;
+}
+
+.video-card .details {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.video-card .video-thumbnail {
+    position: relative;
+}
+
+.video-card .video-thumbnail .thumbnail {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.video-card .video-thumbnail .duration {
+    background: #0f0f0f;
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 2.5px;
+    position: absolute;
+    bottom: 7px;
+    right: 5px;
+}
+
+.video-card .channel-img img {
+    border-radius: 50%;
+}
+
+.video-card .details .text .title {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.video-card .details .text .channel-name,
+.video-card .details .text .views {
+    color: #777;
+    margin-bottom: 6px;
 }
