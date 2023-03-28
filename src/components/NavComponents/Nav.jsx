@@ -1,6 +1,5 @@
-import NavTop from "./NavComponents/NavTop";
-import NavBottom from "./NavComponents/NavBottom";
-
+import NavBottom from './NavBottom';
+import NavTop from './NavTop';
 function Nav() {
   return (
     <>

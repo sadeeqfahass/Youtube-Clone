@@ -53,6 +53,9 @@ body {
     background: transparent; 
     border-radius: 20px 2px 2px 20px;
     border: .7px solid grey;
+    color: #fff;
+    padding: 0 1rem;
+    font-size: 1rem;
 }
 
 .nav .top .search input:focus {
