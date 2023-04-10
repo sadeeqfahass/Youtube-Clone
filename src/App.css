@@ -18,11 +18,12 @@ body {
 .container {
     display: grid;
     grid-template-columns: repeat(15, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: repeat(35, 1fr);
 }
 
 .nav {
     grid-column: 2 / -1;
+    grid-row: 1/4;
     background: #0f0f0f;
     padding: .5rem 1rem;
     position: sticky;
@@ -170,7 +171,8 @@ body {
 .main {
     grid-column: 2 / -1;
     grid-row: 2 / -1;
-    background: #0f0f0f
+    background: #0f0f0f;
+    padding-top: 7rem;
 }
 
 .videos-container {
@@ -182,6 +184,10 @@ body {
 
 .video-card {
     width: 31%;
+}
+
+.video-card .video-card_link {
+    text-decoration: none;
 }
 
 .video-card .details {
@@ -226,4 +232,38 @@ body {
 .video-card .details .text .views {
     color: #777;
     margin-bottom: 6px;
+}
+
+@media screen and (max-width:500px) {
+
+    .nav {
+        grid-column: 1 /-1;
+        grid-row: 1;
+    }
+
+    .nav .top .search {
+        display: none;
+    }
+
+    .nav .top .search input {
+        display: none;
+    }
+
+    .nav .top .search .search-icon {
+        padding: 8px;
+        border-radius: 50%;
+    }
+
+    .aside {
+        transform: translateX(-100%);
+    }
+
+    .main {
+        grid-column: 1/-1;
+        padding-top: 0;
+    }
+
+    .video-card {
+        width: 100%;
+    }
 }
