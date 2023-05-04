@@ -1,31 +1,27 @@
 import { Link } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
-function VideoCard() {
-
-  const [videoData, setVideoData] = useState(null);
+function VideoCard(props) {
 
   return (
     <div className="video-card">
-      <Link to={`/video/10`} className="video-card_link">
+      <Link to={`/video`} className="video-card_link">
         <div className="video-thumbnail">
           <img
-            src="https://picsum.photos/400/200"
+            src={props.thumbnail}
             alt=""
             className="thumbnail"
           />
-          <p className="duration">1:20</p>
+          <p className="duration">{props.duration}:{props.duration}</p>
         </div>
         <div className="details">
           <div className="channel-img">
             <img src="https://picsum.photos/35/35" alt="" />
           </div>
           <div className="text">
-            <p className="title">
-              Lorem ipsum dolor sit amet conseur, adipisicing
-            </p>
-            <p className="channel-name">Channel name</p>
-            <p className="views">200k views -- 12 days ago</p>
+            <p className="title">{props.title}</p>
+            <p className="channel-name">{videoData.channelTitle}</p>
+            <p className="views">{props.viewCount}</p>
           </div>
         </div>
       </Link>

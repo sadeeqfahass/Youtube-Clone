@@ -3,6 +3,7 @@ import "./App.css";
 import Aside from "./components/Aside";
 import Main from "./components/Main";
 import Nav from "./components/Nav";
+import VideoDetails from "./components/VideoDetails";
 import RouterRoots from "./router/RoutesRoot";
 
 function App() {

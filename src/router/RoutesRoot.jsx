@@ -5,7 +5,7 @@ function RoutesRoot() {
   return (
     <>
       <Routes>
-        <Route path="/video/:id" element={<VideoDetails />} />
+        <Route path="/video" element={<VideoDetails />} />
       </Routes>
     </>
   );
